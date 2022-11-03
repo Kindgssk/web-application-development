@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Login & Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+            <h2>SIGARAM SILAMBAM CLUB </h2>
+            <h6>"create your accounts,and join with us".</h6>
+          <div>
+                <a href="#" class="social"><i class="fab 
+                    fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab
+                     fa-youtube"></i></a>
+                <a href="#" class="social"><i class="fab
+                     fa-instagram"></i></a>
+            </div>
+            <span><h4> USE PROFESSIONAL MAIL 
+                ID <br>FOR REGISTRATION.</h4></span>
+            <input type="text" placeholder="Name">
+            <input type="tel" placeholder="ph.no">
+            <input type="date"placeholder="DOB">
+            <input type="number" placeholder="Age">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="password">
+            <button >sign Up</button>
+            
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>SIGARAM SILAMBAM CLUB </h1>
+                <h3>...SIGN IN....</h3><br>
+              <div>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                </div><br>
+    
+    
+                <span><h3> "AUTHORIZED ACCOUNT IS NEEDED
+                    <br>TO SIGN IN"
+                </h3></span>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="password">
+                <button>sign In</button>
+                
+                </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h4>WELCOME TO SIGARAM SILAMBAM CLUB</h4>
+                    <h6><P>"courage is not the absence of fear<br>,but the trimph over it".</P><br>
+                    <p>Never take your eyes off your opponent<br> even when you're blowing</p></h6>
+                    <button class="press" id="sign In">sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h4>"SELF-CORRECTION IS THE <br>HIGHEST FORM OF TRAINING"</h4>
+                    <P><h6>"mARTIAL aRTS IS nOT aBOUT fIGHTING;<br>
+                        iT'S aBOUT bUILDING cHARACTER".</P><br>
+                    <p>.....thE bEST fIGHTER nEVER gET'S anGRY.....</p></h6>
+                    <button class="press" id=" sign Up">sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const signUpButton = document.getElementBYId("sign Up");
+        const signInButton = document.getElementById("sign In");
+        const container = document.getElementById("container");
+        
+        signUpButton.addEventListener('click' ,()=>{
+            container.classList.add("right-panel-active");
+        })
+        signInButton.addEventListener('click' , ()=>{
+            container.classList.remove("right-panel-active");
+        })
+    </script>
+</body>
+</html>
